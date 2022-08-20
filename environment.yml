@@ -1,0 +1,10 @@
+name: sqlalchemy-tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - jupyterlab
+  - sqlalchemy
+  - pandas
+  - psycopg2

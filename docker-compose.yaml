@@ -1,0 +1,13 @@
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8888
+  postgres:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
